@@ -351,3 +351,24 @@ body {
   background-color: #3fc35f;
   border-color: #3fc35f;
 }
+
+.partners {
+  min-height:640px;
+  background-color: #fff;
+  padding-top: 40px;
+}
+
+.partners .img-partners{
+  max-width:150px;
+}
+
+.partners .border-secondary {
+  border-color: #3FC35F !important;
+  border-radius: 8px;
+  box-shadow: 8px 8px 16px #d6d6d6, -8px -8px 16px #ffffff;
+}
+
+.partners .card {
+  min-height: 260px;
+  max-height: 260px;
+}
