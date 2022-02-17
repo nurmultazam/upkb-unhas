@@ -5,7 +5,7 @@
 body {
   background-color: #b7dbc0;
   font-family: "Open Sans", sans-serif;
-  color: #071c4d;
+  color: #000;
 }
 
 .overlay {
@@ -321,4 +321,33 @@ body {
 
 .struktur img{
   width: 60%;
+}
+
+.news {
+  min-height:640px;
+  background-color: #fff;
+  padding-top: 40px;
+}
+
+.news a{
+  font-size: 14px;
+  color: #000;
+  
+}
+.news a:hover {
+  color: #3fc35f;
+}
+
+.news .news-img {
+  max-width: 100%;
+  max-height: 350px;
+}
+
+.news li a {
+  font-size: 16px;
+}
+
+.page-item.active .page-link{
+  background-color: #3fc35f;
+  border-color: #3fc35f;
 }
