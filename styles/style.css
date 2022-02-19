@@ -143,6 +143,13 @@ body {
     max-height: 400px;
   }
 
+  .btn-login {
+    background-color: #3fc35f;
+    color: #ffffff;
+    width: 100%;
+    border-radius: 20px;
+  }
+
 }
 
 @media (max-width: 991.98px) {
