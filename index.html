@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="libraries/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="libraries/aos/aos.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -115,7 +116,7 @@
     <main>
       <section class="section-news" id="news">
         <div class="container">
-          <div class="row pt-5">
+          <div class="row pt-5" data-aos="zoom-in">
             <h3>News</h3>
             <a href="activites.html" class="link-dark text-end text-decoration-none">See all</a>
           </div>
@@ -123,7 +124,7 @@
           <!-- News -->
           <div class="row justify-content-center">
             <div class="col-md-4 col-sm-12 my-sm-3">
-              <div class="card">
+              <div class="card" data-aos="fade-up" data-aos-duration="500">
                 <img src="images/news1.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">KESEMPATAN UNTUK MENJADI PENGUSAHA BERBASIS TEKNOLOGI</h5>
@@ -134,7 +135,7 @@
             </div>
 
             <div class="col-md-4 col-sm-12 my-sm-3">
-              <div class="card">
+              <div class="card" data-aos="fade-up" data-aos-duration="600">
                 <img src="images/news1.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">KESEMPATAN UNTUK MENJADI PENGUSAHA BERBASIS TEKNOLOGI</h5>
@@ -145,7 +146,7 @@
             </div>
 
             <div class="col-md-4 col-sm-12 my-sm-3">
-              <div class="card">
+              <div class="card" data-aos="fade-up" data-aos-duration="700">
                 <img src="images/news1.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">KESEMPATAN UNTUK MENJADI PENGUSAHA BERBASIS TEKNOLOGI</h5>
@@ -161,26 +162,26 @@
       <!-- About -->
       <section class="section-about" id="about">
         <div class="container">
-          <div class="row text-center mb-3">
+          <div class="row text-center mb-3" data-aos="fade-right" data-aos-duration="1000">
             <h2>About</h2>
           </div>
           <div class="row">
-            <div class="col-md-6 col-sm-12 my-sm-3">
+            <div class="col-md-6 col-sm-12 my-sm-3" data-aos="fade-right" data-aos-duration="1100">
               <h4>Suatu Lembaga Fungsional di PT yang berfungsi Menginkubasi Potensi Bisnis Perguruan Tinggi dan Dunia Usaha menuju Perguruan Tinggi Berbasis Entrepreneurial University.</h4>
-              <div class="ratio ratio-16x9">
+              <div class="ratio ratio-16x9" data-aos="fade-up" data-aos-duration="1200">
                 <video src="video/upkb.mp4" title="video" allowfullscreen></video>
               </div>
             </div>
 
             <div class="col-md-6 col-sm-12">
-              <div class="card border-secondary mb-3 my-sm-3">
+              <div class="card border-secondary mb-3 my-sm-3" data-aos="fade-left" data-aos-duration="1000">
                 <div class="card-body">
                   <h5 class="card-title text-center text-about mt-3">Visi</h5>
                   <p>Menjadi Pusat Layanan Kewirausahaan dan Bisnis di Perguruan Tinggi yang Terkemuka dan Profesional yang Berjiwa Maritim</p>
                 </div>
               </div>
 
-              <div class="card border-secondary mb-3 my-sm-3">
+              <div class="card border-secondary mb-3 my-sm-3" data-aos="fade-left" data-aos-duration="1100">
                 <div class="card-body">
                   <h5 class="card-title text-center text-about mt-3">Misi</h5>
                   <p>Quality Standar. Entrepreneurial Spirit. Innovative Creative. Environmental. Public Society. Gender Equaity. Givernance. Networking. Counseling/Mentoring. Show case. Start up suppot.</p>
@@ -194,7 +195,7 @@
       <!-- Partners -->
       <section class="section-partners" id="partners">
         <div class="container">
-          <div class="row text-center mb-3 justify-content-center">
+          <div class="row text-center mb-3 justify-content-center" data-aos="zoom-in-up" data-aos-duration="1000">
             <h2>Partners</h2>
             <p>Daftar Universitas yang telah membangun kerjasama bersama UPKB.</p>
 
@@ -214,12 +215,12 @@
       <!-- Services -->
       <section class="section-services" id="services">
         <div class="container">
-          <div class="row text-center mb-3 justify-content-center">
+          <div class="row text-center mb-3 justify-content-center" data-aos="zoom-in" data-aos-duration="1000">
             <h2>Services</h2>
             <p>Layanan yang di sediakan oleh situs UPKB.</p>
           </div>
           <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-duration="1000">
               <div class="card h-100">
                 <div class="card-body text-center">
                   <i class="fa-solid fa-desktop service-icon mb-3"></i>
@@ -228,7 +229,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
               <div class="card h-100">
                 <div class="card-body text-center">
                   <i class="fa-solid fa-message service-icon mb-3"></i>
@@ -237,7 +238,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
               <div class="card h-100">
                 <div class="card-body text-center">
                   <i class="fa-solid fa-note-sticky service-icon mb-3"></i>
@@ -246,7 +247,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
               <div class="card h-100">
                 <div class="card-body text-center">
                   <i class="fa-solid fa-circle-info service-icon mb-3"></i>
@@ -255,7 +256,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
               <div class="card h-100">
                 <div class="card-body text-center">
                   <i class="fa-solid fa-newspaper service-icon mb-3"></i>
@@ -264,7 +265,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
               <div class="card h-100">
                 <div class="card-body text-center">
                   <i class="fa-solid fa-address-book service-icon mb-3"></i>
@@ -280,10 +281,10 @@
       <!-- Testimonial Bisnis -->
       <section class="testi" id="testi">
         <div class="container">
-          <div class="row text-center mb-3">
+          <div class="row text-center mb-3" data-aos="zoom-in-up">
             <h2>Testimonial Bisnis</h2>
           </div>
-          <div class="testimonial-view">
+          <div class="testimonial-view" data-aos="fade-up" data-aos-duration="900">
             <div class="carousel slide" id="testimonialCarousel" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <!-- Testi 1 -->
@@ -373,12 +374,12 @@
       <!-- Contact -->
       <section class="contact" id="contact">
         <div class="container">
-          <div class="row text-center mb-2 mt-0">
+          <div class="row text-center mb-2 mt-0" data-aos="zoom-in-up" data-aos-duration="700">
             <h2>Contact</h2>
           </div>
 
           <div class="row">
-            <div class="col-md-8 col-sm-12 mb-3">
+            <div class="col-md-8 col-sm-12 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
               <div class="mb-3">
                 <div class="mb-3">
                   <label for="name" class="form-label">Nama</label>
@@ -402,7 +403,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 col-sm-12 mt-3">
+            <div class="col-md-4 col-sm-12 mt-3" data-aos="fade-up" data-aos-duration="900" data-aos-delay="50">
               <p><i class="fas fa-map-marker-alt me-2 icon-style"></i>Jl. Perintis Kemerdekaan Km 10 Makassar 90245, Sulawesi Selatan</p>
               <a href="mailto:upkb@mail.com" class="link-dark text-decoration-none"><i class="fas fa-envelope me-2 icon-style"></i>upkb@mail.com</a>
               <p><i class="fas fa-phone me-2 mt-3 icon-style"></i>085710295518</p>
@@ -441,5 +442,9 @@
       </footer>
     </main>
     <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="libraries/aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
