@@ -30,6 +30,7 @@ body {
 .navbar-light .navbar-nav .nav-link.active {
   font-weight: bold;
   color: #3fc35f !important;
+  
 }
 
 .bg-light {
@@ -141,6 +142,7 @@ body {
   .section-news .card img{
     max-height: 400px;
   }
+
 }
 
 @media (max-width: 991.98px) {
@@ -208,6 +210,8 @@ body {
   border-radius: 11px;
   box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.15);
+  min-height: 400px;
+  max-height: 400px;
 }
 
 .testi .block .row {
@@ -380,4 +384,68 @@ body {
 .partners .card {
   min-height: 260px;
   max-height: 260px;
+}
+
+.section-coach {
+  min-height:640px;
+  background-color: #fff;
+  padding-top: 40px;
+}
+
+.section-coach .btn-outline-success {
+  border-color: #3fc35f;
+  color: #333;
+  border-radius: 8px;
+  font-size: 20px;
+}
+.section-coach .btn-outline-success:hover {
+  color: #fff;
+}
+
+.section-coach .form-control{
+  border-color: #3fc35f;
+}
+
+.section-coach .coach-img {
+  border-radius: 11px;
+  padding: 5px;
+  max-width: 100%;
+  max-height: 250px;
+}
+
+@media (max-width: 767.98px) {
+  .section-coach .coach-img {
+    border-radius: 11px;
+    padding: 5px;
+    max-width: 100%;
+    max-height: 300px;
+  }
+
+}
+
+.section-coach .card {
+  border-color: #3fc35f;
+  border-radius: 8px;
+  min-height: 400px;
+  max-height: 400px;
+}
+
+.section-coach .card-body{
+  padding: 10px;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.section-coach .card-text{
+  font-size: 14px;
+}
+
+.section-contact {
+  /* min-height:100vh; */
+  background-color: #fff;
+  padding-top: 40px;
+}
+
+.section-contact .icon-style{
+  font-size: 20px;
 }
