@@ -434,7 +434,7 @@ margin-top: -10px;
 }
 
 .section-coach {
-  min-height:640px;
+  min-height:100vh;
   background-color: #fff;
   padding-top: 40px;
 }
@@ -495,4 +495,102 @@ margin-top: -10px;
 
 .section-contact .icon-style{
   font-size: 20px;
+}
+
+.section-product {
+  min-height:100vh;
+  background-color: #fff;
+  padding-top: 40px;
+}
+
+.section-product .product-img {
+  border-radius: 11px;
+  padding: 5px;
+  max-width: 100%;
+  max-height: 250px;
+}
+
+@media (max-width: 767.98px) {
+  .section-product .product-img {
+    border-radius: 11px;
+    padding: 5px;
+    max-width: 100%;
+    max-height: 250px;
+  }
+
+}
+
+.section-product .card {
+  border-color: #3fc35f;
+  border-radius: 8px;
+  min-height: 435px;
+  max-height: 435px;
+}
+
+.section-product .card-body{
+  padding: 10px;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.section-product .card-text{
+  font-size: 14px;
+}
+
+.section-product .btn-login {
+  background-color: #3fc35f;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.section-detail {
+  min-height:100vh;
+  background-color: #fff;
+  padding-top: 40px;
+}
+
+.section-detail .detail-img {
+  max-width: 100%;
+  max-height: 400px;
+  background-size: cover;
+}
+
+.section-detail .card-text.harga{
+  color: #409D56;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.section-detail .productlain-img {
+  border-radius: 11px;
+  padding: 5px;
+  max-width: 100%;
+  max-height: 250px;
+}
+.section-detail .card.productlain {
+  border-color: #3fc35f;
+  border-radius: 8px;
+  min-height: 435px;
+  max-height: 435px;
+}
+
+.section-detail .card-body.productlain{
+  padding: 10px;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.section-detail .card-text.productlain{
+  font-size: 14px;
+}
+
+.section-detail .card{
+  border-color: #3fc35f;
+  border-radius: 8px;
+}
+
+.section-detail .btn-login {
+  background-color: #3fc35f;
+  border-radius: 8px;
+  margin-bottom: 5px;
 }
