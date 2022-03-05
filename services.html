@@ -17,35 +17,32 @@
   <body>
     <!-- Navbar -->
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-lights">
         <!-- <div class="container-fluid"> -->
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="#">
           <img src="images/navbar.png" alt="" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarNavDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> About </a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarNavDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About </a>
               <ul class="dropdown-menu" aria-labelledby="navbarNavDropdown">
                 <li><a class="dropdown-item" href="about.html">UPKB</a></li>
                 <li><a class="dropdown-item" href="struktur.html">Struktur Oragnisasi</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarNavDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> SEDS </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarNavDropdown">
-                <li><a class="dropdown-item" href="activites.html">Activities</a></li>
-                <li><a class="dropdown-item" href="partners.html">Partners</a></li>
-              </ul>
+
+            <li class="nav-item">
+              <a class="nav-link" href="activites.html">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="service.html">Service</a>
+              <a class="nav-link active" href="services.html">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="product.html">Product</a>
@@ -57,15 +54,33 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
+
           <!-- Mobile -->
           <div class="d-grid gap-2 d-md-flex justify-content-md-end d-sm-block d-md-none">
-            <button class="btn btn-login my-2 my-sm-0">Login</button>
+            <button class="btn btn-login my-2 my-sm-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
             <button class="btn btn-outline-success">Sign Up</button>
           </div>
           <!-- Desktop -->
           <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-md-block">
-            <button class="btn btn-login ms-4 me-md-2">Login</button>
+            <button class="btn btn-login ms-4 me-md-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
             <button class="btn btn-outline-success">Sign Up</button>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- </div> -->
@@ -79,10 +94,10 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a class="text-decoration-none text-black" href="index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Service</li>
+              <li class="breadcrumb-item active" aria-current="page">Services</li>
             </ol>
           </nav>
-          <h2 class="text-center">Service</h2>
+          <h2 class="text-center">Services</h2>
           <h5 class="text-center text-secondary">Layanan yang di sediakan oleh situs UPKB.</h5>
         </div>
       </div>
@@ -149,6 +164,76 @@
         </div>
       </section>
 
+      <!-- Partners -->
+      <div class="bkg-about">
+        <div class="py-4">
+          <h2 class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Partners</h2>
+          <h5 class="text-center text-secondary" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">Daftar Universitas yang telah membangun kerjasama bersama UPKB.</h5>
+        </div>
+      </div>
+      <section class="partners">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+              <div class="card border-secondary mb-4">
+                <div class="card-body text-center">
+                  <img src="images/unhas.png" class="img-partners mb-2 mt-2" alt="unhas" />
+                  <h4 class="card-title mt-2">Universitas Hasanuddin</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <div class="card border-secondary mb-4">
+                <div class="card-body text-center">
+                  <img src="images/unm.png" class="img-partners mb-2 mt-2" alt="unm" />
+                  <h4 class="card-title mt-2">Universitas Negeri Makassar</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+              <div class="card border-secondary mb-4">
+                <div class="card-body text-center">
+                  <img src="images/unsrat.png" class="img-partners mb-2 mt-2" alt="unsrat" />
+                  <h4 class="card-title mt-2">Universitas Sam Ratulangi</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+              <div class="card border-secondary mb-4">
+                <div class="card-body text-center">
+                  <img src="images/unismuh.png" class="img-partners mb-2 mt-2" alt="unsrat" />
+                  <h4 class="card-title mt-2">Universitas Muhammadiyah Makassar</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
+              <div class="card border-secondary mb-4">
+                <div class="card-body text-center">
+                  <img src="images/delasalle.png" class="img-partners mb-2 mt-2" alt="unsrat" />
+                  <h4 class="card-title mt-2">Universitas De La Salle Manado</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+              <div class="card border-secondary mb-4">
+                <div class="card-body text-center">
+                  <img src="images/unima.png" class="img-partners mb-2 mt-2" alt="unsrat" />
+                  <h4 class="card-title mt-2">Universitas Negeri Manado</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+              <div class="card border-secondary mb-4">
+                <div class="card-body text-center">
+                  <img src="images/unklab.png" class="img-partners mb-2 mt-2" alt="unsrat" />
+                  <h4 class="card-title mt-2">Universitas Klabat</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Footer -->
       <footer class="section-footer">
         <div class="border-top mb-4"></div>
@@ -182,6 +267,9 @@
     <script src="libraries/aos/aos.js"></script>
     <script>
       AOS.init();
+      AOS.init({
+        once: true,
+      });
     </script>
   </body>
 </html>

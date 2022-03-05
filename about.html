@@ -17,35 +17,32 @@
   <body>
     <!-- Navbar -->
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-lights">
         <!-- <div class="container-fluid"> -->
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="#">
           <img src="images/navbar.png" alt="" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarNavDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> About </a>
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarNavDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About </a>
               <ul class="dropdown-menu" aria-labelledby="navbarNavDropdown">
                 <li><a class="dropdown-item active" href="about.html">UPKB</a></li>
                 <li><a class="dropdown-item" href="struktur.html">Struktur Oragnisasi</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarNavDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> SEDS </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarNavDropdown">
-                <li><a class="dropdown-item" href="activites.html">Activities</a></li>
-                <li><a class="dropdown-item" href="partners.html">Partners</a></li>
-              </ul>
+
+            <li class="nav-item">
+              <a class="nav-link" href="activites.html">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="service.html">Service</a>
+              <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="product.html">Product</a>
@@ -57,15 +54,33 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
+
           <!-- Mobile -->
           <div class="d-grid gap-2 d-md-flex justify-content-md-end d-sm-block d-md-none">
-            <button class="btn btn-login my-2 my-sm-0">Login</button>
+            <button class="btn btn-login my-2 my-sm-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
             <button class="btn btn-outline-success">Sign Up</button>
           </div>
           <!-- Desktop -->
           <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-md-block">
-            <button class="btn btn-login ms-4 me-md-2">Login</button>
+            <button class="btn btn-login ms-4 me-md-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
             <button class="btn btn-outline-success">Sign Up</button>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- </div> -->
@@ -139,6 +154,9 @@
     <script src="libraries/aos/aos.js"></script>
     <script>
       AOS.init();
+      AOS.init({
+        once: true,
+      });
     </script>
   </body>
 </html>

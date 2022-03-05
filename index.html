@@ -17,7 +17,7 @@
   <body>
     <!-- Navbar -->
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-lights">
         <!-- <div class="container-fluid"> -->
         <a class="navbar-brand" href="#">
           <img src="images/navbar.png" alt="" />
@@ -37,15 +37,12 @@
                 <li><a class="dropdown-item" href="struktur.html">Struktur Oragnisasi</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarNavDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> SEDS </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarNavDropdown">
-                <li><a class="dropdown-item" href="activites.html">Activities</a></li>
-                <li><a class="dropdown-item" href="partners.html">Partners</a></li>
-              </ul>
+
+            <li class="nav-item">
+              <a class="nav-link" href="activites.html">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="service.html">Service</a>
+              <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="product.html">Product</a>
@@ -135,6 +132,9 @@
 
     <!-- Main -->
     <main>
+      <!-- Btn Go To TOP -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
       <section class="section-news" id="news">
         <div class="container">
           <div class="row pt-5" data-aos="zoom-in">
@@ -466,6 +466,29 @@
     <script src="libraries/aos/aos.js"></script>
     <script>
       AOS.init();
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <script>
+      mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
   </body>
 </html>
