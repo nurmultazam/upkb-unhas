@@ -6,6 +6,7 @@ body {
   background-color: #b7dbc0;
   font-family: "Open Sans", sans-serif;
   color: #000;
+  /* max-width: 100vw; */
 }
 
 .overlay {
@@ -24,6 +25,21 @@ body {
 
 .navbar-brand img {
   max-height: 40px;
+}
+
+ul li:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #34ab51;
+  box-shadow: 0px 0px 1px #34ab51;
+  border-radius: 10px;
+  transition: .3s;
+  margin-top: -3px;
+}
+ul li:hover:after {
+  width: 100%;
 }
 
 
@@ -46,10 +62,18 @@ body {
 
 .dropdown-menu {
   background-color: #b7dbc0;
+  display:  none;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  transition: .7s;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 .dropdown-item:hover {
-  background-color: #3fc35f;
+  background-color: #b7dbc0;
 }
 
 .btn-login {
@@ -57,6 +81,11 @@ body {
   color: #ffffff;
   width: 80px;
   border-radius: 20px;
+  transition: all 0.5s ease 0s;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
 }
 .btn-login:hover {
   background-color: #34ab51;
@@ -68,6 +97,11 @@ body {
   border-color: #fff;
   /* margin-left: -10px; */
   border-radius: 20px;
+  transition: all 0.5s ease 0s;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
 }
 .btn-outline-success:hover {
   background-color: #34ab51;
@@ -80,8 +114,8 @@ body {
 }
 
 .section-news .card {
-  min-height: 560px;
-  max-height: 560px;
+  min-height: 520px;
+  max-height: 520px;
 }
 
 .section-news .section-news-heading {
@@ -233,14 +267,19 @@ body {
     border-radius: 170px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-margin-top: -10px;
+    margin-top: -10px;
   }
 
   .testi .content {
     text-align: justify;
     font-size: 12px !important;
     margin-top: -10px;
+  }
 
+  @media (max-width: 767.98px) {
+    #testi {
+      overflow: hidden;
+    }
   }
 
   .testi .user-name {
@@ -404,7 +443,9 @@ margin-top: -10px;
 
 .news .news-img {
   max-width: 100%;
-  max-height: 350px;
+  min-width: 600px;
+  min-height: 500px;
+  max-height: 500px;
 }
 
 .news li a {
@@ -443,11 +484,22 @@ margin-top: -10px;
   padding-top: 40px;
 }
 
+#cardCoach {
+  min-height: auto;
+  max-height: fit-content;
+  padding-bottom: 15px;
+}
+
 .section-coach .btn-outline-success {
   border-color: #3fc35f;
   color: #333;
   border-radius: 8px;
   font-size: 20px;
+  transition: all 0.5s ease 0s;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
 }
 .section-coach .btn-outline-success:hover {
   color: #fff;
@@ -507,6 +559,12 @@ margin-top: -10px;
   padding-top: 40px;
 }
 
+.section-product .inline {
+  width: auto;
+  height: auto;
+  display: inline;
+}
+
 .section-product .product-img {
   border-radius: 11px;
   padding: 5px;
@@ -545,6 +603,14 @@ margin-top: -10px;
   background-color: #3fc35f;
   border-radius: 8px;
   margin-bottom: 5px;
+  transition: all 0.5s ease 0s;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.section-product .btn-login:hover{
+  background-color: #34ab51;
 }
 
 .section-detail {
@@ -597,23 +663,37 @@ margin-top: -10px;
   background-color: #3fc35f;
   border-radius: 8px;
   margin-bottom: 5px;
+  transition: all 0.5s ease 0s;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.section-detail .btn-login:hover {
+  background-color: #34ab51;
+  border-radius: 8px;
+  margin-bottom: 5px;
 }
 
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
-  right: 20px; /* Place the button 30px from the right */
+  right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: #3fc35f; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
+  padding: 11px; /* Some padding */
   border-radius: 11px; /* Rounded corners */
   font-size: 20px; /* Increase font size */
+  width: 48px;
+  height: 48px;
+  transition: all .2s ease-in-out 0s;
 }
+
 
 #myBtn:hover {
   background-color: #34ab51; /* Add a dark-grey background on hover */

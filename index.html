@@ -71,13 +71,28 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Bootstrap 5 Modal Form</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label">Email Address</label>
+                      <input type="text" class="form-control" id="username" name="username" placeholder="Username" />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="rememberMe" />
+                      <label class="form-check-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <div class="modal-footer d-block">
+                      <p class="float-start">Not yet account <a href="#">Sign Up</a></p>
+                      <button type="submit" class="btn btn-warning float-end">Submit</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -135,6 +150,87 @@
       <!-- Btn Go To TOP -->
       <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
 
+      <!-- Product -->
+      <section class="section-product" id="product">
+        <div class="container">
+          <div class="text-center">
+            <h2>Product</h2>
+            <p>Daftar produk yang telah dibuat oleh start up UPKB.</p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-3 col-sm-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+              <div class="card mt-5">
+                <img src="images/admin/lo.png" class="card-img-top product-img" alt="produk" />
+                <div class="card-body text-center">
+                  <h5 class="card-title pb-2">Contoh nama produk</h5>
+                  <div class="row">
+                    <p class="card-text col text-start">Harga</p>
+                    <p class="card-text col text-end">Rp. 100.000</p>
+                  </div>
+                  <div class="row">
+                    <p class="card-text col text-start">Kontak</p>
+                    <p class="card-text col text-end">0811-xxx-xxxx</p>
+                  </div>
+                  <a href="details.html" class="btn btn-login mt-2 text-decoration-none text-white">Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-3 col-sm-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <div class="card mt-5">
+                <img src="images/admin/lo.png" class="card-img-top product-img" alt="produk" />
+                <div class="card-body text-center">
+                  <h5 class="card-title pb-2">Contoh nama produk</h5>
+                  <div class="row">
+                    <p class="card-text col text-start">Harga</p>
+                    <p class="card-text col text-end">Rp. 100.000</p>
+                  </div>
+                  <div class="row">
+                    <p class="card-text col text-start">Kontak</p>
+                    <p class="card-text col text-end">0811-xxx-xxxx</p>
+                  </div>
+                  <button class="btn btn-login mt-2">Detail</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-3 col-sm-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+              <div class="card mt-5">
+                <img src="images/admin/lo.png" class="card-img-top product-img" alt="produk" />
+                <div class="card-body text-center">
+                  <h5 class="card-title pb-2">Contoh nama produk</h5>
+                  <div class="row">
+                    <p class="card-text col text-start">Harga</p>
+                    <p class="card-text col text-end">Rp. 100.000</p>
+                  </div>
+                  <div class="row">
+                    <p class="card-text col text-start">Kontak</p>
+                    <p class="card-text col text-end">0811-xxx-xxxx</p>
+                  </div>
+                  <button class="btn btn-login mt-2">Detail</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-3 col-sm-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+              <div class="card mt-5">
+                <img src="images/admin/lo.png" class="card-img-top product-img" alt="produk" />
+                <div class="card-body text-center">
+                  <h5 class="card-title pb-2">Contoh nama produk</h5>
+                  <div class="row">
+                    <p class="card-text col text-start">Harga</p>
+                    <p class="card-text col text-end">Rp. 100.000</p>
+                  </div>
+                  <div class="row">
+                    <p class="card-text col text-start">Kontak</p>
+                    <p class="card-text col text-end">0811-xxx-xxxx</p>
+                  </div>
+                  <button class="btn btn-login mt-2">Detail</button>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-login inline my-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">See all product</button>
+          </div>
+        </div>
+      </section>
+
       <section class="section-news" id="news">
         <div class="container">
           <div class="row pt-5" data-aos="zoom-in">
@@ -183,11 +279,11 @@
       <!-- About -->
       <section class="section-about" id="about">
         <div class="container">
-          <div class="row text-center mb-3" data-aos="fade-right" data-aos-duration="1000">
+          <div class="row text-center mb-3" data-aos="fade-up" data-aos-duration="1000">
             <h2>About</h2>
           </div>
           <div class="row">
-            <div class="col-md-6 col-sm-12 my-sm-3" data-aos="fade-right" data-aos-duration="1100">
+            <div class="col-md-6 col-sm-12 my-sm-3" data-aos="fade-up" data-aos-duration="1100">
               <h4>Suatu Lembaga Fungsional di PT yang berfungsi Menginkubasi Potensi Bisnis Perguruan Tinggi dan Dunia Usaha menuju Perguruan Tinggi Berbasis Entrepreneurial University.</h4>
               <div class="ratio ratio-16x9" data-aos="fade-up" data-aos-duration="1200">
                 <video src="video/upkb.mp4" title="video" allowfullscreen></video>
@@ -195,14 +291,14 @@
             </div>
 
             <div class="col-md-6 col-sm-12">
-              <div class="card border-secondary mb-3 my-sm-3" data-aos="fade-left" data-aos-duration="1000">
+              <div class="card border-secondary mb-3 my-sm-3" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card-body">
                   <h5 class="card-title text-center text-about mt-3">Visi</h5>
                   <p>Menjadi Pusat Layanan Kewirausahaan dan Bisnis di Perguruan Tinggi yang Terkemuka dan Profesional yang Berjiwa Maritim</p>
                 </div>
               </div>
 
-              <div class="card border-secondary mb-3 my-sm-3" data-aos="fade-left" data-aos-duration="1100">
+              <div class="card border-secondary mb-3 my-sm-3" data-aos="fade-up" data-aos-duration="1100">
                 <div class="card-body">
                   <h5 class="card-title text-center text-about mt-3">Misi</h5>
                   <p>Quality Standar. Entrepreneurial Spirit. Innovative Creative. Environmental. Public Society. Gender Equaity. Givernance. Networking. Counseling/Mentoring. Show case. Start up suppot.</p>
